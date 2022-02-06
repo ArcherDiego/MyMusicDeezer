@@ -1,19 +1,19 @@
 import Header from "../../components/Header"
 import Card from "../../components/Card"
-import HomeStyle from "./style"
+import { HomeStyle, DivCardStyle } from "./style"
 
 const Home = () => {
     return (
         <HomeStyle>
             <Header />
-            <div>
+            <DivCardStyle>
                 <Card />
                 <Card />
                 <Card />
                 <Card />
                 <Card />
                 <Card />
-            </div>
+            </DivCardStyle>
         </HomeStyle>
     )
 }
