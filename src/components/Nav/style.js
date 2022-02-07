@@ -1,12 +1,11 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
-const NavStyle = styled.nav`
+export const NavStyle = styled.nav`
     display: flex;
     align-items: center;
-
-    li {
-        padding: 10px;
-    }
 `;
 
-export default NavStyle
+export const NavLinkButton = styled(NavLink)`
+    padding: 10px;
+`;

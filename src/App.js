@@ -1,12 +1,11 @@
 import GlobalStyle from "./theme/GlobalStyle";
-import Home from "./pages/Home";
-//import Favorito from "./pages/Favoritos";
+import Router from "./pages/Router";
 
 const App = () => {
   return (
     <>
       <GlobalStyle />
-      <Home />
+      <Router />
     </>
   );
 }

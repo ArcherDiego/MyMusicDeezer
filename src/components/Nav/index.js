@@ -1,15 +1,15 @@
-import NavStyle from "./style";
+import { NavStyle, NavLinkButton} from "./style";
 import Button from "../Button";
 
 const Navigate = () => {
     return (
         <NavStyle>
-            <li>
+            <NavLinkButton to="/" end>
                 <Button>Início</Button>
-            </li>
-            <li>
+            </NavLinkButton>
+            <NavLinkButton to="/favoritos">
                 <Button>Meus Favoritos</Button>
-            </li>
+            </NavLinkButton>
         </NavStyle>
     )
 }
