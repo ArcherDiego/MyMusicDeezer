@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const api = axios.create({
-    baseURL: 'https://cors-anywhere.herokuapp.com/api.deezer.com/',
+    baseURL: 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/',
     headers: {
         Authorization: 'fr9dgnITCSaqjT5SdINk2ViiQqXuuBEqVpmhQwUDnqwc6aLgp0D',
         'Access-Control-Allow-Origin' : '*',
