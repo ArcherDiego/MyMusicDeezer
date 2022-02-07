@@ -24,6 +24,7 @@ ul, li {
 
 a {
     text-decoration: none;
+    color: ${({theme}) => theme.colors.font.primary};
 }
 
 img {
@@ -33,6 +34,7 @@ img {
 
 button, input {
     display: block;
+    padding: 0;
     font-size: ${({theme}) => theme.fontSize.sm};
     font-family: ${({theme}) => theme.fontFamily.primary};
     color: ${({theme}) => theme.colors.background.primary};

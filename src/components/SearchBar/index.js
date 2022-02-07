@@ -1,12 +1,13 @@
 import React from "react"
-import axios from "axios"
+//import axios from "axios"
+//import { FiSearch } from "react-icons/fi";
 import { InputStyle } from "./style"
 
 const SearchBar = () => {
     //const [initRepos, setInitRepos] = React.useState([])
     //const [repos, setRepos] = React.useState([])
 
-    const url = 'https://api.deezer.com/search?q=eminem';
+    /*const url = 'https://api.deezer.com/search?q=eminem';
 
     React.useEffect(() => {
         axios.get(url)
@@ -14,7 +15,7 @@ const SearchBar = () => {
             .catch(error => console.log(error))
     },[])
 
-    /*const handleChange = ({target}) => {
+    const handleChange = ({target}) => {
         if(!target.value) {
             return setRepos(initRepos)
         }

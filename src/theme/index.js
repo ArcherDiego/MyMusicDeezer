@@ -1,24 +1,26 @@
 const colors = {
     background: {
         primary: '#33322E',
-        secundary: '#555',
+        second: '#555',
         gradiant: '#333',
     },
     font: {
         primary: '#FFF',
-        secundary: '#DCDCDC',
-    }
+        second: '#DCDCDC',
+    },
+    button: '#40A3FF',
+    heart: '#FF5858',
 }
 
 const fontFamily = {
     primary: 'Arial, Helvetica, sans-serif',
-    secundary: 'Roboto, sans-serif',
+    second: 'Roboto, sans-serif',
 }
 
 const fontSize = {
-    xl: '2.5rem',
-    lg: '2rem',
-    md: '1.5rem',
+    xl: '2rem',
+    lg: '1.5rem',
+    md: '1.25rem',
     sm: '1rem',
 }
 
@@ -26,6 +28,7 @@ const theme = {
     colors,
     fontFamily,
     fontSize,
+    border: '10px',
 }
 
 export default theme

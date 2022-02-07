@@ -4,7 +4,7 @@ import Button from "../Button";
 const Navigate = () => {
     return (
         <NavStyle>
-            <NavLinkButton to="/" end>
+            <NavLinkButton to="/">
                 <Button>Início</Button>
             </NavLinkButton>
             <NavLinkButton to="/favoritos">
