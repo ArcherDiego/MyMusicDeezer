@@ -60,33 +60,13 @@ export const TimePlayStyle = styled.div`
 
     p {
         padding: 5px;
-        font-size: ${({theme}) => theme.fontSize.md};
+        font-size: ${({theme}) => theme.fontSize.sm};
         font-family: ${({theme}) => theme.fontFamily.second};
     }
-    button {
-        background: ${({theme}) => theme.colors.background.primary};
-        color: ${({theme}) => theme.colors.font.primary};
-        border-radius: 50px;
-        border: none;
-        height: 45px;
-        width: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: ${({theme}) => theme.fontSize.lg};
-        cursor: pointer;
-        transition: 0.1s;
-
-        &:focus, :hover {
-            outline: none;
-            box-shadow: 0 0 0 3px #40A3FF, 0 0 0 4px #33322E;
-        }
-
-        &:disabled {
-            opacity: 0.5;
-            cursor: wait;
-        }
-    } 
+    audio {
+        width: 170px;
+        height: 40px;
+    }
 `;
 
 export const HeartStyle = styled.div`

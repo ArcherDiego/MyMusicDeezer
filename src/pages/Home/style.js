@@ -6,7 +6,7 @@ export const HomeStyle = styled.div`
 `;
 
 export const DivCardStyle = styled.div`
-    margin: 0 5%;
+    margin: 0 2%;
     display: grid;
     grid-template-columns: 50% 50%;
 `;

@@ -1,12 +1,10 @@
 import axios from "axios"
 
 const api = axios.create({
-    baseURL: 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/',
+    baseURL: 'https://deezerdevs-deezer.p.rapidapi.com/',
     headers: {
-        Authorization: 'fr9dgnITCSaqjT5SdINk2ViiQqXuuBEqVpmhQwUDnqwc6aLgp0D',
-        'Access-Control-Allow-Origin' : '*',
-        'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
-        'Content-Type': 'text/plain'
+        "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+        "x-rapidapi-key": '923cff1576msh1afb25e17ddd3eep1183ccjsn6ac33acec8bf'
     }
 })
 

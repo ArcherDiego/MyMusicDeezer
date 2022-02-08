@@ -1,17 +1,21 @@
 import React from "react"
-//import axios from "axios"
+//import api from "../../api"
+//import Card from "../Card"
 //import { FiSearch } from "react-icons/fi";
 import { InputStyle } from "./style"
 
 const SearchBar = () => {
-    //const [initRepos, setInitRepos] = React.useState([])
-    //const [repos, setRepos] = React.useState([])
-
-    /*const url = 'https://api.deezer.com/search?q=eminem';
+    /*const [initRepos, setInitRepos] = React.useState([])
+    const [repos, setRepos] = React.useState([])
 
     React.useEffect(() => {
-        axios.get(url)
-            .then(res => console.log(res))
+        api.get('search?q=eminem')
+            .then(res => {
+                const data = res.data.data
+                setInitRepos(data)
+                setRepos(data)
+                console.log(data)
+            })
             .catch(error => console.log(error))
     },[])
 
@@ -20,14 +24,30 @@ const SearchBar = () => {
             return setRepos(initRepos)
         }
 
-        const filterRepos = repos.filter(({name}) => name.includes(target.value))
+        const filterRepos = repos.filter((repos) => (
+            repos.title.includes(target.value) || 
+            repos.artist.name.includes(target.value) || 
+            repos.album.title.includes(target.value)
+        ))
 
         setRepos(filterRepos)
-    }*/
+    }
+    {repos.map((repos, index) => (
+        <Card 
+            key={ index }
+            album={ repos.album.cover }
+            title={ repos.title_short }
+            autor={ repos.artist.name } 
+            audio={ repos.preview }
+            time={ repos.duration }
+            deezer={ repos.link }
+        />
+    ))}*/
 
     return (
         <>
             <InputStyle type="text" placeholder="Artista, música ou álbum" />
+            
         </>
     )
 }
