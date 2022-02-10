@@ -1,11 +1,10 @@
 import React from "react"
-//import api from "../../api"
-//import Card from "../Card"
-//import { FiSearch } from "react-icons/fi";
+import api from "../../api"
 import { InputStyle } from "./style"
 
 const SearchBar = () => {
-    /*const [initRepos, setInitRepos] = React.useState([])
+
+    const [initRepos, setInitRepos] = React.useState([])
     const [repos, setRepos] = React.useState([])
 
     React.useEffect(() => {
@@ -25,29 +24,20 @@ const SearchBar = () => {
         }
 
         const filterRepos = repos.filter((repos) => (
-            repos.title.includes(target.value) || 
-            repos.artist.name.includes(target.value) || 
-            repos.album.title.includes(target.value)
+            repos.title.toLowerCase().includes(target.value.toLowerCase()) || 
+            repos.artist.name.toLowerCase().includes(target.value.toLowerCase()) || 
+            repos.album.title.toLowerCase().includes(target.value.toLowerCase())
         ))
 
         setRepos(filterRepos)
     }
-    {repos.map((repos, index) => (
-        <Card 
-            key={ index }
-            album={ repos.album.cover }
-            title={ repos.title_short }
-            autor={ repos.artist.name } 
-            audio={ repos.preview }
-            time={ repos.duration }
-            deezer={ repos.link }
-        />
-    ))}*/
-
     return (
         <>
-            <InputStyle type="text" placeholder="Artista, música ou álbum" />
-            
+            <InputStyle 
+                type="text" 
+                placeholder="Artista, música ou álbum" 
+                onChange={ handleChange } 
+            />  
         </>
     )
 }

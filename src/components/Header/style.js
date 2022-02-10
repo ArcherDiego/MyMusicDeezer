@@ -3,13 +3,8 @@ import styled from "styled-components";
 export const HeaderStyle = styled.header`
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 10px;
-
-    div {
-        display: flex;
-        align-items: center;
-    }
 `;
 
 export const LogoStyle = styled.img`

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardStyle = styled.div`
-    margin: 35px;
+    margin: 15px 10px;
     height: auto;
     background-color: #555;
     border-radius: ${({theme}) => theme.border};
@@ -64,7 +64,7 @@ export const TimePlayStyle = styled.div`
         font-family: ${({theme}) => theme.fontFamily.second};
     }
     audio {
-        width: 170px;
+        width: 300px;
         height: 40px;
     }
 `;
@@ -85,4 +85,9 @@ export const HeartStyle = styled.div`
             color: ${({theme}) => theme.colors.heart};
         }
     }
+`;
+
+export const DeezerStyle = styled.div`
+    display: flex;
+    justify-content: flex-end;
 `;
